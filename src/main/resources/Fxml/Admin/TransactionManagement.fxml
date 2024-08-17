@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="transactionManagementPage" prefHeight="561.0" prefWidth="823.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Admin.TransactionManagement">
+   <children>
+      <AnchorPane prefHeight="106.0" prefWidth="1004.0" style="-fx-background-color: #002d72;">
+         <children>
+            <Label layoutX="185.0" layoutY="30.0" prefHeight="46.0" prefWidth="780.0" text="Transaction Management Page" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="67.0" fitWidth="86.0" layoutX="87.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/handshake_11316561.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="155.0" layoutY="129.0" mnemonicParsing="false" onAction="#switchDashboard" prefHeight="23.0" prefWidth="112.0" style="-fx-background-color: #002d72;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="286.0" layoutY="129.0" mnemonicParsing="false" onAction="#switchUsers" prefHeight="23.0" prefWidth="112.0" style="-fx-background-color: #002d72;" text="Users" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="420.0" layoutY="129.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="112.0" style="-fx-background-color: #002d72;" text="Accounts" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="563.0" layoutY="129.0" mnemonicParsing="false" onAction="#switchAccounts" prefHeight="23.0" prefWidth="112.0" style="-fx-background-color: #002d72;" text="Transactions" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="699.0" layoutY="129.0" mnemonicParsing="false" onAction="#switchLogin" prefHeight="23.0" prefWidth="112.0" style="-fx-background-color: #002d72;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="transactionTable" layoutX="31.0" layoutY="249.0" prefHeight="253.0" prefWidth="891.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="account_id" prefWidth="94.20001220703125" text="Account_id" />
+            <TableColumn fx:id="tran_type" prefWidth="96.20002746582031" text="Tran_type" />
+            <TableColumn fx:id="amount" prefWidth="76.5999755859375" text="Amount" />
+            <TableColumn fx:id="tran_date" prefWidth="90.800048828125" text="Tran_date" />
+            <TableColumn fx:id="bank" prefWidth="73.79998779296875" text="Bank" />
+            <TableColumn fx:id="payee_address" prefWidth="89.4000244140625" text="payee_address" />
+            <TableColumn fx:id="received_name" prefWidth="100.0" text="received_name" />
+            <TableColumn fx:id="status" prefWidth="94.2000732421875" text="Status" />
+            <TableColumn fx:id="action" prefWidth="97.60002441406255" text="Action" />
+        </columns>
+      </TableView>
+      <Label layoutX="60.0" layoutY="194.0" prefHeight="24.0" prefWidth="226.0" text="Transactions Information" textFill="#002d72">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="767.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/search-interface-symbol.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchField" layoutX="576.0" layoutY="188.0" prefHeight="37.0" prefWidth="234.0" promptText="Search by account_id" />
+      <Button layoutX="816.0" layoutY="188.0" mnemonicParsing="false" onAction="#searchTransaction" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #002d72;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="login_form" prefHeight="700.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.LoginController">
+   <left>
+      <AnchorPane style="-fx-background-color: #002d72;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="59.0" fitWidth="52.0" layoutX="103.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/bank.png" />
+               </image>
+            </ImageView>
+
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="305.0" prefHeight="60.0" prefWidth="190.0" text="MY BANK" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="61.0" layoutY="346.0" prefHeight="72.0" prefWidth="303.0" text="Online Banking System" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="19.0" />
+               </font>
+            </Label>
+            <Line endX="123.60000610351562" endY="-1.52587890625E-5" layoutX="224.0" layoutY="364.0" startX="-119.4000015258789" startY="-1.52587890625E-5" stroke="WHITE" strokeWidth="3.0" />
+            <Label alignment="CENTER" layoutX="112.0" layoutY="543.0" prefHeight="66.0" prefWidth="171.0" text="Anything Help?" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="137.0" layoutY="587.0" text="Hotline  09-123456789" textFill="WHITE" />
+            <Label layoutX="128.0" layoutY="606.0" text="Mail  mybank@gamil.com" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="67.0" layoutY="626.0" text="Address: Shwe Yeik Thar Street, Kamayut, Yangon" textFill="WHITE" />
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="34.0" layoutX="180.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/login.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="login_username" layoutX="150.0" layoutY="213.0" prefHeight="38.0" prefWidth="286.0" promptText="Email" />
+            <PasswordField fx:id="login_password" layoutX="149.0" layoutY="290.0" prefHeight="38.0" prefWidth="290.0" promptText="Password" />
+            <Label alignment="CENTER" layoutX="214.0" layoutY="126.0" prefHeight="39.0" prefWidth="133.0" text="Login">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="login_showpassword" layoutX="152.0" layoutY="363.0" mnemonicParsing="false" onAction="#showPassword" text="Show Password" />
+            <Button fx:id="login_btn" layoutX="154.0" layoutY="412.0" mnemonicParsing="false" onAction="#login_btnOnAction" prefHeight="34.0" prefWidth="280.0" style="-fx-background-color: #002d72;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Hyperlink fx:id="login_forgotpassword" layoutX="327.0" layoutY="360.0" onAction="#switchForgotForm" text="Forgot Password?" />
+            <Button fx:id="login_register_btn" layoutX="160.0" layoutY="595.0" mnemonicParsing="false" onAction="#showRegisterForm" prefHeight="38.0" prefWidth="278.0" style="-fx-background-color: #002d72;" text="Register Now" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="183.0" layoutY="551.0" prefHeight="28.0" prefWidth="217.0" text="Create a new account?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="login_cancel_btn" layoutX="154.0" layoutY="462.0" mnemonicParsing="false" onAction="#login_cancel_btnOnAction" prefHeight="34.0" prefWidth="279.0" style="-fx-background-color: #002d72;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="login_message" layoutX="168.0" layoutY="92.0" prefHeight="47.0" prefWidth="415.0" textFill="#f72828">
+               <font>
+                  <Font name="Verdana Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="login_password_visible" layoutX="149.0" layoutY="329.0" prefHeight="26.0" prefWidth="288.0" visible="false" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

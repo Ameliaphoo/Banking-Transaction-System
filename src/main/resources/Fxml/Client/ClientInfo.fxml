@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="770.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Client.ClientInfoController">
+   <children>
+      <Label layoutX="424.0" layoutY="88.0" text="Client Information" textFill="#002d72">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="4.0" layoutY="2.0" mnemonicParsing="false" onAction="#goBackToClientMenu" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: #002d72;" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="7.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/chevron_248423.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="388.0" layoutY="163.0" text="Name">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="232.0" text="Email">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="309.0" text="Recovery Question">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="384.0" text="Answer">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="381.0" layoutY="449.0" text="Deposit Account">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="585.0" text="Phone">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="665.0" text="Address">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="517.0" layoutY="121.0" startX="-100.0" stroke="#002d72" strokeWidth="2.0" />
+      <TextField fx:id="client_name" layoutX="529.0" layoutY="158.0" />
+      <TextField fx:id="client_email" layoutX="529.0" layoutY="229.0" />
+      <TextField fx:id="client_recovery_question" layoutX="529.0" layoutY="305.0" />
+      <TextField fx:id="client_answer" layoutX="529.0" layoutY="379.0" />
+      <TextField fx:id="client_deposit_account" layoutX="529.0" layoutY="444.0" />
+      <TextField fx:id="client_saving_account" layoutX="529.0" layoutY="516.0" />
+      <Label layoutX="381.0" layoutY="521.0" text="Saving Accont">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="client_phone" layoutX="530.0" layoutY="586.0" />
+      <TextField fx:id="client_address" layoutX="533.0" layoutY="660.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="forget1_form" prefHeight="627.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Forget1Controller">
+   <children>
+      <AnchorPane prefHeight="146.0" prefWidth="995.0" style="-fx-background-color: #002d72;">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="83.0" layoutX="150.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/lock_11280912.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="248.0" layoutY="44.0" prefHeight="48.0" prefWidth="294.0" text="Forgot Password" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label alignment="CENTER" layoutX="212.0" layoutY="187.0" prefHeight="48.0" prefWidth="95.0" text="Email">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="272.0" text="Question">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="337.0" text="Answer">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="forgot_email" layoutX="378.0" layoutY="195.0" prefHeight="39.0" prefWidth="223.0" />
+      <ComboBox fx:id="forgot_selectquestion" layoutX="378.0" layoutY="267.0" prefHeight="39.0" prefWidth="223.0" promptText="Select Questions" />
+      <TextField fx:id="forgot_answer" layoutX="378.0" layoutY="334.0" prefHeight="48.0" prefWidth="223.0" />
+      <Button fx:id="forgot_proceed_btn" layoutX="377.0" layoutY="407.0" mnemonicParsing="false" onAction="#proceed_btnOnAction" prefHeight="39.0" prefWidth="236.0" style="-fx-background-color: #002d72;" text="Proceed" textFill="#fff9f9">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="forgot_back_btn" layoutX="377.0" layoutY="583.0" mnemonicParsing="false" onAction="#back_btnOnAction" prefHeight="39.0" prefWidth="236.0" style="-fx-background-color: #002d72;" text="Back" textFill="#fffcfc">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

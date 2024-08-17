@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="add_form" prefHeight="784.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Admin.UserAdd">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="975.0" style="-fx-background-color: #002d72;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="75.0" layoutX="214.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/add.png" />
+               </image></ImageView>
+            <Label layoutX="315.0" layoutY="44.0" text="Add User Page" textFill="#fffefe">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="204.0" layoutY="131.0" text="Username">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="183.0" text="Email">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="244.0" text="Password">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="297.0" text="Confrim Passwrod">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="521.0" text="Recovery Question">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="570.0" text="Answer">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="352.0" text="Phone">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="204.0" layoutY="410.0" text="Address">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="back_btn" layoutY="116.0" onMouseClicked="#back" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #D4ebf2;">
+         <children>
+            <Label layoutX="59.0" layoutY="10.0" text="Back">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="50.0" layoutX="19.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/chevron_248423.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="202.0" layoutY="465.0" text="Birthday">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="add_username" layoutX="409.0" layoutY="120.0" prefHeight="38.0" prefWidth="266.0" />
+      <TextField fx:id="add_email" layoutX="408.0" layoutY="173.0" prefHeight="38.0" prefWidth="266.0" />
+      <PasswordField fx:id="add_password" layoutX="408.0" layoutY="228.0" prefHeight="38.0" prefWidth="266.0" />
+      <PasswordField fx:id="add_confirmpass" layoutX="408.0" layoutY="286.0" prefHeight="38.0" prefWidth="266.0" />
+      <TextField fx:id="add_phone" layoutX="408.0" layoutY="340.0" prefHeight="38.0" prefWidth="266.0" />
+      <TextField fx:id="add_address" layoutX="408.0" layoutY="396.0" prefHeight="38.0" prefWidth="266.0" />
+      <DatePicker fx:id="add_birthday" layoutX="411.0" layoutY="453.0" prefHeight="38.0" prefWidth="266.0" />
+      <ComboBox fx:id="add_recoveryquestion" layoutX="411.0" layoutY="511.0" prefHeight="38.0" prefWidth="266.0" promptText="Select your recovery questions" />
+      <TextField fx:id="add_answer" layoutX="411.0" layoutY="565.0" prefHeight="38.0" prefWidth="266.0" />
+      <Label layoutX="196.0" layoutY="625.0" text="User Type">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="add_usertype" layoutX="409.0" layoutY="616.0" prefHeight="38.0" prefWidth="266.0" promptText="Choose User Type" />
+      <AnchorPane layoutX="750.0" layoutY="209.0" onMouseClicked="#addUser" prefHeight="127.0" prefWidth="114.0" style="-fx-background-color: #D4ebf2;">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="30.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/new-tab_12180713.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="add_btn" layoutX="-1.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="126.0" style="-fx-background-color: #002d72;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

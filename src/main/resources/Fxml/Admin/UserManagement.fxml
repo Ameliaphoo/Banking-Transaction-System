@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<!--<AnchorPane fx:id="user_management_page" prefHeight="655.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Admin.UserManagement">-->
+<!--   <children>-->
+<!--      <AnchorPane prefHeight="155.0" prefWidth="994.0" style="-fx-background-color: #002d72;">-->
+<!--         <children>-->
+<!--            <ImageView fitHeight="101.0" fitWidth="145.0" layoutX="127.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../../Images/bank.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--            <Label layoutX="333.0" layoutY="69.0" text="User Management Page" textFill="WHITE">-->
+<!--               <font>-->
+<!--                  <Font name="Verdana Bold Italic" size="30.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--         </children></AnchorPane>-->
+<!--      <AnchorPane layoutY="155.0" prefHeight="365.0" prefWidth="230.0">-->
+<!--         <children>-->
+<!--            <Line endX="-4.399993896484375" endY="302.0" layoutX="229.0" layoutY="195.0" startX="-1.79998779296875" startY="-195.0" stroke="#002d72" strokeWidth="3.0" />-->
+<!--            <Button layoutX="43.0" layoutY="68.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="172.0" style="-fx-background-color: #002d72;" text="Dashboard" textFill="WHITE">-->
+<!--               <font>-->
+<!--                  <Font name="System Bold" size="12.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--            <Button layoutX="43.0" layoutY="158.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" style="-fx-background-color: #002d72;" text="Users" textFill="WHITE">-->
+<!--               <font>-->
+<!--                  <Font name="System Bold" size="12.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--            <Button layoutX="43.0" layoutY="249.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: #002d72;" text="Accounts" textFill="WHITE">-->
+<!--               <font>-->
+<!--                  <Font name="System Bold" size="12.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--            <Button layoutX="43.0" layoutY="335.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="166.0" style="-fx-background-color: #002d72;" text="Transcations" textFill="WHITE">-->
+<!--               <font>-->
+<!--                  <Font name="System Bold" size="12.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--         </children>-->
+<!--      </AnchorPane>-->
+<!--      <Button fx:id="search_username" layoutX="704.0" layoutY="203.0" mnemonicParsing="false" onAction="#searchUserName" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #002d72;" text="Search" textFill="WHITE">-->
+<!--         <font>-->
+<!--            <Font name="System Bold" size="15.0" />-->
+<!--         </font></Button>-->
+<!--      <TextField fx:id="searchfield" layoutX="389.0" layoutY="203.0" prefHeight="38.0" prefWidth="313.0" promptText="Search by user name" />-->
+<!--      <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="404.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true" />-->
+<!--      <TableView fx:id="usertable" layoutX="252.0" layoutY="346.0" prefHeight="200.0" prefWidth="743.0">-->
+<!--        <columns>-->
+<!--          <TableColumn fx:id="userid" prefWidth="56.199951171875" text="UserID" />-->
+<!--          <TableColumn fx:id="username" prefWidth="84.39996337890625" text="User Name" />-->
+<!--            <TableColumn fx:id="email" prefWidth="99.20004272460938" text="Email" />-->
+<!--            <TableColumn fx:id="phone" prefWidth="89.4000244140625" text="Phone" />-->
+<!--            <TableColumn fx:id="address" prefWidth="77.0" text="Address" />-->
+<!--            <TableColumn fx:id="birthday" prefWidth="78.4000244140625" text="Birthday" />-->
+<!--            <TableColumn fx:id="password" prefWidth="78.5999755859375" text="Password" />-->
+<!--            <TableColumn fx:id="usertype" prefWidth="67.20001220703125" text="User Type" />-->
+<!--            <TableColumn fx:id="actioncol" prefWidth="107.20000000000005" text="Action" />-->
+<!--        </columns>-->
+<!--      </TableView>-->
+<!--      <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="351.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">-->
+<!--         <image>-->
+<!--            <Image url="@../../Images/search-interface-symbol.png" />-->
+<!--         </image>-->
+<!--      </ImageView>-->
+<!--      <Label layoutX="301.0" layoutY="276.0" prefHeight="30.0" prefWidth="216.0" text="User Information" textFill="#002d72">-->
+<!--         <font>-->
+<!--            <Font name="Bauhaus 93" size="20.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <AnchorPane fx:id="add_user_btn" layoutX="735.0" layoutY="272.0" onMouseClicked="#addUserForm" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #002d72;">-->
+<!--         <children>-->
+<!--            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../../Images/circle_16597173.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--            <Label layoutX="62.0" layoutY="11.0" text="Add User" textFill="WHITE">-->
+<!--               <font>-->
+<!--                  <Font name="Bauhaus 93" size="15.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--         </children>-->
+<!--      </AnchorPane>-->
+<!--   </children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane fx:id="user_management_page" prefHeight="655.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Admin.UserManagement">
+   <children>
+      <AnchorPane prefHeight="155.0" prefWidth="1000.0" style="-fx-background-color: #002d72;">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="145.0" layoutX="127.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/bank.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="333.0" layoutY="69.0" text="User Management Page" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="155.0" prefHeight="496.0" prefWidth="202.0">
+         <children>
+            <Line endX="-4.399993896484375" endY="302.0" layoutX="209.0" layoutY="195.0" startX="-1.79998779296875" startY="-195.0" stroke="#002d72" strokeWidth="3.0" />
+            <Button layoutX="18.0" layoutY="68.0" mnemonicParsing="false" onAction="#switchDashboard" prefHeight="46.0" prefWidth="172.0" style="-fx-background-color: #002d72;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="158.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="172.0" style="-fx-background-color: #002d72;" text="Users" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="249.0" mnemonicParsing="false" onAction="#switchAccounts" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: #002d72;" text="Accounts" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="335.0" mnemonicParsing="false" onAction="#switchTransaction" prefHeight="46.0" prefWidth="166.0" style="-fx-background-color: #002d72;" text="Transcations" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="18.0" layoutY="419.0" mnemonicParsing="false" onAction="#switchLogin" prefHeight="38.0" prefWidth="166.0" style="-fx-background-color: #002d72;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="search_username" layoutX="871.0" layoutY="222.0" mnemonicParsing="false" onAction="#searchUserName" prefHeight="38.0" prefWidth="93.0" style="-fx-background-color: #002d72;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchfield" layoutX="548.0" layoutY="222.0" prefHeight="38.0" prefWidth="313.0" promptText="Search by user name" />
+      <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="829.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/search-interface-symbol.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="230.0" layoutY="172.0" prefHeight="30.0" prefWidth="216.0" text="User Information" textFill="#002d72">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="add_user_btn" layoutX="230.0" layoutY="222.0" onMouseClicked="#addUserForm" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #002d72;">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/circle_16597173.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="62.0" layoutY="11.0" text="Add User" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="usertable" layoutX="222.0" layoutY="277.0" prefHeight="334.0" prefWidth="767.0">
+         <columns>
+            <TableColumn fx:id="userid" prefWidth="56.199951171875" text="UserID" />
+            <TableColumn fx:id="username" prefWidth="84.39996337890625" text="User Name" />
+            <TableColumn fx:id="email" prefWidth="99.20004272460938" text="Email" />
+            <TableColumn fx:id="phone" prefWidth="89.4000244140625" text="Phone" />
+            <TableColumn fx:id="address" prefWidth="77.0" text="Address" />
+            <TableColumn fx:id="birthday" prefWidth="78.4000244140625" text="Birthday" />
+            <TableColumn fx:id="password" prefWidth="78.5999755859375" text="Password" />
+            <TableColumn fx:id="usertype" prefWidth="67.20001220703125" text="User Type" />
+            <TableColumn fx:id="actioncol" prefWidth="130.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

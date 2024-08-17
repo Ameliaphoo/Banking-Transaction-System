@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="create_account_form" prefHeight="719.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Admin.AccountCreate">
+   <children>
+      <AnchorPane prefHeight="719.0" prefWidth="282.0" style="-fx-background-color: #002d72;">
+         <children>
+            <Label layoutX="28.0" layoutY="263.0" text="Create Bank Account" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/writing_1717741.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="415.0" layoutY="173.0" prefHeight="32.0" prefWidth="90.0" text="User ID">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="415.0" layoutY="240.0" text="Account number">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="415.0" layoutY="296.0" text="Account Type">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="418.0" layoutY="357.0" prefHeight="26.0" prefWidth="89.0" text="Balance">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="415.0" layoutY="426.0" text="Pin">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="418.0" layoutY="480.0" text="Retype_pin">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="create_userid" layoutX="585.0" layoutY="168.0" prefHeight="39.0" prefWidth="188.0" />
+      <TextField fx:id="create_accountnum" layoutX="585.0" layoutY="237.0" prefHeight="39.0" prefWidth="188.0" />
+      <TextField fx:id="create_balance" layoutX="585.0" layoutY="358.0" prefHeight="39.0" prefWidth="188.0" />
+      <PasswordField fx:id="create_pin" layoutX="585.0" layoutY="417.0" prefHeight="39.0" prefWidth="188.0" />
+      <PasswordField fx:id="create_repin" layoutX="585.0" layoutY="477.0" prefHeight="39.0" prefWidth="188.0" />
+      <ComboBox fx:id="create_acctype" layoutX="585.0" layoutY="296.0" prefHeight="39.0" prefWidth="188.0" promptText="Select Account Type" />
+      <Button fx:id="create_account_btn" layoutX="585.0" layoutY="542.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="39.0" prefWidth="204.0" style="-fx-background-color: #002d72;" text="Create Account" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="back_btn" layoutX="293.0" layoutY="14.0" onMouseClicked="#back_to_Acc" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #D4ebf2;">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="27.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/chevron_248423.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="36.0" layoutY="8.0" text="Back">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

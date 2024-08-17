@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="729.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Client.TransactionController">
+   <children>
+      <TitledPane layoutX="402.0" layoutY="186.0" prefHeight="399.0" prefWidth="475.0" text="Payee Information" />
+      <AnchorPane prefHeight="795.0" prefWidth="344.0" style="-fx-background-color: #002d72;">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="134.0" layoutX="123.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/handshake_11316561.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="331.0" text="Transfer Money" textFill="#fcf8f8">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="424.0" layoutY="221.0" prefHeight="38.0" prefWidth="156.0" text="Payee address">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="352.0" prefHeight="19.0" prefWidth="76.0" text="Amount">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="425.0" text="Transfer Type">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="488.0" text="Bank">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="payee_address" layoutX="606.0" layoutY="221.0" prefHeight="38.0" prefWidth="234.0" />
+      <TextField fx:id="amount" layoutX="607.0" layoutY="342.0" prefHeight="38.0" prefWidth="234.0" />
+      <Label layoutX="424.0" layoutY="539.0" text="Pin">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pin" layoutX="610.0" layoutY="529.0" prefHeight="38.0" prefWidth="234.0" />
+      <ComboBox fx:id="transfer_type" layoutX="610.0" layoutY="405.0" prefHeight="38.0" prefWidth="228.0" promptText="Choose Transfer Type" />
+      <Button fx:id="transfer_btn" layoutX="616.0" layoutY="623.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="234.0" style="-fx-background-color: #002d72;" text="Transfer" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="bank" layoutX="610.0" layoutY="468.0" prefHeight="38.0" prefWidth="228.0" promptText="Choose Bank " />
+      <Label alignment="CENTER" layoutX="398.0" layoutY="123.0" prefHeight="38.0" prefWidth="156.0" text="Your account">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="myaccount" layoutX="604.0" layoutY="118.0" prefHeight="38.0" prefWidth="234.0" promptText="Choose your account" />
+      <Label layoutX="422.0" layoutY="282.0" prefHeight="38.0" prefWidth="156.0" text="Name">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="received_name" layoutX="604.0" layoutY="284.0" prefHeight="38.0" prefWidth="234.0" />
+      <Button fx:id="go_backbtn" layoutX="359.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBackToClientMenu" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: #002d72;" text="Back" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

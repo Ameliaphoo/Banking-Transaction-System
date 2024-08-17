@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane fx:id="admin_menu_form" prefHeight="620.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Admin.AdminMenuController">
+   <children>
+      <AnchorPane prefHeight="138.0" prefWidth="1009.0" style="-fx-background-color: #002d72;">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="123.0" layoutX="151.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/bank.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="294.0" layoutY="38.0" prefHeight="98.0" prefWidth="597.0" text="Welcome To My Bank Admin Page" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="152.0" prefHeight="98.0" prefWidth="940.0">
+         <children>
+            <Button fx:id="dashboard_btn" layoutX="57.0" layoutY="15.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="147.0" style="-fx-background-color: #002d72;" text="Dashboard" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="users_btn" layoutX="266.0" layoutY="16.0" mnemonicParsing="false" onAction="#userManagement" prefHeight="54.0" prefWidth="167.0" style="-fx-background-color: #002d72;" text="Users" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="accounts_btn" layoutX="492.0" layoutY="18.0" mnemonicParsing="false" onAction="#accountManagement" prefHeight="54.0" prefWidth="175.0" style="-fx-background-color: #002d72;" text="Accounts " textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="64.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/layout_9950315.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="283.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/user_3177440.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="504.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/wallet_10345432.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="transaction_btn" layoutX="719.0" layoutY="18.0" mnemonicParsing="false" onAction="#transactionManagement" prefHeight="54.0" prefWidth="184.0" style="-fx-background-color: #002d72;" text="Transaction" textFill="#fff8f8">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="33.0" fitWidth="40.0" layoutX="730.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/handshake_11316561.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="268.0" prefHeight="344.0" prefWidth="981.0">
+         <children>
+            <PieChart fx:id="pieChart" layoutX="14.0" layoutY="23.0" prefHeight="300.0" prefWidth="400.0" />
+            <LineChart fx:id="lineChart" layoutX="430.0" layoutY="16.0" prefHeight="300.0" prefWidth="550.0">
+               <xAxis>
+                  <CategoryAxis label="Date" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="Transaction Amount" />
+               </yAxis>
+            </LineChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

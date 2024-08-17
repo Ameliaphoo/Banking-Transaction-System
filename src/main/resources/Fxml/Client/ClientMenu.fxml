@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="client_menu_page" prefHeight="792.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mybank.Controllers.Client.ClientMenuController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="89.0" prefHeight="638.0" prefWidth="298.0">
+         <children>
+            <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="43.0" layoutY="482.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/exit_1286907.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="client_transaction_btn" layoutX="104.0" layoutY="238.0" mnemonicParsing="false" onAction="#switchTransaction" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: #002d72;" text="Transcation" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="client_accounts_btn" layoutX="103.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="161.0" style="-fx-background-color: #002d72;" text="Accounts" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="client_profile_btn" layoutX="101.0" layoutY="403.0" mnemonicParsing="false" onAction="#switchProfile" prefHeight="33.0" prefWidth="154.0" style="-fx-background-color: #002d72;" text="Profile" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="client_logout_btn" layoutX="101.0" layoutY="474.0" mnemonicParsing="false" onAction="#switchLogOut" prefHeight="33.0" prefWidth="154.0" style="-fx-background-color: #002d72;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="120.0" layoutY="-70.0" prefHeight="61.0" prefWidth="195.0" text="MY BANK" textFill="#002d72">
+               <font>
+                  <Font name="Verdana Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="72.0" layoutX="218.0" layoutY="-20.0" startX="-100.0" stroke="#002d72" strokeWidth="3.0" />
+            <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="43.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/handshake_11316561.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="43.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/wallet_10345432.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="37.0" layoutX="39.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/user_3177440.png" />
+               </image>
+            </ImageView>
+            <Line endX="131.0" layoutX="143.0" layoutY="372.0" startX="-100.0" stroke="#002d72" strokeWidth="3.0" />
+            <Line endX="-67.79998779296875" endY="566.2999877929688" layoutX="368.0" layoutY="110.0" startX="-67.79998779296875" startY="-193.8000030517578" stroke="#002d72" strokeWidth="3.0" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="380.0" layoutY="28.0" prefHeight="22.0" prefWidth="144.0" text="Hi User" textFill="#002d72">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="69.0" text="Welcome to MY BANK">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="todayDateLabel" layoutX="685.0" layoutY="30.0" prefHeight="18.0" prefWidth="124.0" textFill="#000000a0" />
+      <AnchorPane fx:id="myaccount_info" layoutX="299.0" layoutY="134.0" prefHeight="650.0" prefWidth="694.0">
+         <children>
+            <Label fx:id="accountsLabel" layoutX="44.0" layoutY="20.0" text="My Accounts " />
+            <Label fx:id="noAccountsLabel" layoutX="44.0" layoutY="20.0" text="No accounts available" visible="false" />
+            <AnchorPane fx:id="depositAccountPane" layoutX="13.0" layoutY="46.0" prefHeight="142.0" prefWidth="282.0" style="-fx-background-color: #002d72;" visible="false">
+               <children>
+                  <Label fx:id="depositAccountBalanceLabel" alignment="CENTER" layoutX="107.0" layoutY="18.0" prefHeight="46.0" prefWidth="175.0" text="Ks 3000000" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="depositAccountNumberLabel" layoutX="125.0" layoutY="68.0" text="1234 5678 9012 3456" textFill="#fafafa">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="80.0" layoutX="34.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/money_4836908.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="22.0" layoutX="75.0" layoutY="119.0" stroke="#00000003" strokeType="INSIDE" width="210.0" />
+                  <Label layoutX="27.0" layoutY="9.0" text="Deposit Account" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="savingAccountPane" layoutX="330.0" layoutY="46.0" prefHeight="142.0" prefWidth="286.0" style="-fx-background-color: #002d72;" visible="false">
+               <children>
+                  <Label layoutX="27.0" layoutY="14.0" text="Saving Account" textFill="WHITE" />
+                  <Label fx:id="savingAccountBalanceLabel" layoutX="88.0" layoutY="31.0" prefHeight="46.0" prefWidth="195.0" text="Ks 20000000" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="savingAccountNumberLabel" layoutX="116.0" layoutY="75.0" prefHeight="22.0" prefWidth="162.0" text="1234 5678 9012 3456" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="33.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/money_4836908.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="22.0" layoutX="73.0" layoutY="119.0" stroke="#00000009" strokeType="INSIDE" width="210.0" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="summaryLabel" layoutX="40.0" layoutY="251.0" text="Account Summary" visible="false" />
+            <AnchorPane fx:id="account_information_box" layoutX="24.0" layoutY="302.0" prefHeight="188.0" prefWidth="203.0" style="-fx-border-color: #002d72;" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="13.0" prefHeight="33.0" prefWidth="80.0" text="Income" />
+                  <Label fx:id="incomeLabel" layoutX="26.0" layoutY="60.0" text="+30000 kyats" textFill="#7ab749">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="12.0" layoutY="104.0" text="Outcome " />
+                  <Label fx:id="outcomeLabel" layoutX="26.0" layoutY="141.0" text=" -40000 kyats" textFill="#e72c2c">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Line endX="75.5999755859375" layoutX="117.0" layoutY="93.0" startX="-100.0" stroke="#002d72" />
+               </children></AnchorPane>
+            <Label fx:id="transactionLabel" layoutX="279.0" layoutY="252.0" text="Latest Transaction" visible="false" />
+            <TableView fx:id="user_transaction_table" layoutX="268.0" layoutY="292.0" prefHeight="200.0" prefWidth="396.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="user_account_number" prefWidth="103.199951171875" text="Account_id" />
+                  <TableColumn fx:id="user_amount" prefWidth="88.0" text="Amount" />
+                  <TableColumn fx:id="user_action" prefWidth="88.0" text="Action" />
+                  <TableColumn fx:id="user_payee_address" prefWidth="114.4000244140625" text="Payee Address" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="80.0" fitWidth="94.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/bank.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
