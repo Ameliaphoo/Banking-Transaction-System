@@ -67,7 +67,7 @@ public class ClientMenuController implements Initializable {
         user_account_number.setCellValueFactory(new PropertyValueFactory<>("account_id"));
         user_amount.setCellValueFactory(new PropertyValueFactory<>("amount"));
         user_action.setCellValueFactory(new PropertyValueFactory<>("action"));
-        user_payee_address.setCellValueFactory(new PropertyValueFactory<>("payeeAddress"));
+        user_payee_address.setCellValueFactory(new PropertyValueFactory<>("payee_address"));
 
         // Load initial data
         loadAccountData();
